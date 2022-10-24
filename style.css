@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,600;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 13px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: ital, sans-serif;
+    font-size: 0.99rem;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.container{
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 13rem auto 22rem;
+
+}
+
+a{
+    color: red;
+}
+
+h2{
+    font-weight: 00;
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 0.90rem;
+}
+small{
+    font-size: 0.72rem;
+}
+
+aside{
+height: 100vh;
+background: rgb(45, 135, 218);
+border-radius: 40px;
+}
+aside .top{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+}
+aside .close{
+    display: none;
+}
+aside .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+aside .top .logo .dappr{
+    margin-top: 50px;
+    color: white;
+   
+   
+}
+aside .sidebar{
+    background: rgb(45, 135, 218);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    position: relative;
+    top: 4rem;
+    
+}
+
+aside h3{
+    font-weight: 500;
+}
+aside .sidebar a{
+    display: flex;
+    color: white;
+    margin: 2rem;
+    gap:1rem ;
+    align-items: center;
+    position: relative;
+    height: 0.2rem;
+    transition: all 280ms ease;
+}
+
+aside .sidebar a span{
+
+    font-size: 1.6rem;
+    transition: 300ms ease;
+}
+
+aside .sidebar a:last-child{
+
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+
+aside .sidebar a:hover{
+    color: palegreen;
+}
+aside .sidebar a:hover span{
+    margin-left: 1rem;
+}
+aside .sidebar .message-count{
+    background-color: red;
+    padding: 2px 12px;
+    font-size: 11px;
+    border-radius: 20px;
+}
+
+main{
+    margin-top: 1.5rem;
+}
+
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+ 
+    
+}
+main .insights > div{
+  background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 300ms ease;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+main .insights > div:hover{
+    box-shadow: none;
+    
+}
+.box .box-material{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Main Middle */
+
+/* section.middle{
+border: 1px solid red;
+background: red;
+margin-top: 30px;
+padding: 3rem 0;
+display: flex;
+justify-content: space-around;
+
+}
+section .middle-left{
+    background: salmon;
+    width: 20%;
+    padding: 3rem 0 ;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+section .middle-right{
+    background: gold;
+    width: 70%;
+}
+
+section .client{
+    background-color: white;
+    padding:2.5rem ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    
+}
+
+    section .overdue{
+    background-color: white;
+    padding:2.5rem ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+   
+} */
+
+.middle{
+    display: flex;
+    margin-top: 30px;
+    
+    
+}
+.middle-left{
+    flex: 1;
+
+}
+.middle-right{
+    flex: 5;
+   display: flex;
+   justify-content: center;
+   
+
+}
+.middle-left .card-top{
+    height: 110px;
+    width: 200px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; 
+}
+
+.middle-left .card-top .card-top-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;   
+}
+
+.middle-left .card-top h4{
+    color: #313131; 
+}
+
+.middle-left .card-top .card-top-main span{
+    color: #1d2357;
+        font-size: 45px;
+        font-weight: 600;
+        margin-left: 5px; 
+}
+
+.middle-left .card-top .card-top-main p{
+    margin-right: 20px;
+    text-align: center;
+    width: 56px;
+    font-size: 13px;
+    padding: 3px;
+    background: #e0f7d8;
+    border-radius: 5px;
+    color: #79e454;
+}
+
+.middle-left .card-top .card-top-main #red{
+    color: #c9484c;
+    background: #f9d9df; 
+}
+
+
+
+.middle-right .content {
+    width: 80%;
+    height: 90%;
+
+    background: #ffffff;
+   
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; 
+    margin-top: 10px;
+    margin-left:100px;
+    border-radius: 10px;
+    padding:1rem .5rem;
+    
+
+
+}
+.middle-right .content .title {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: px 20px;
+/* margin: 10px 10px; */
+
+
+}
+
+.middle-right .content .title p{
+    color:#555079;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.middle-right .content .title span{
+    color:"383754"
+}
+
+/* Main  order */
+
+
+main .recent-orders{
+    margin-top: 5rem;
+    background: #ffffff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; 
+    padding: 1rem 0;
+    
+}
+
+main .recent-orders h2{
+    margin-bottom: 0.8rem;
+}
+
+main .recent-orders table{
+
+    background-color: rgb(250, 249, 249);
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: fuchsia;
+    padding: 2rem;
+    border-collapse: collapse;
+   
+    
+}
+
+main .recent-orders table:hover{
+    box-shadow: none;
+}
+
+main table td,th{
+    text-align: left;
+    padding: 8px;
+    height: 2.8rem;
+    border-bottom: 1px solid light;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+main .recent-orders table .avatar{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 1px solid black;
+}
+
+
+/* Right Board */
+
+.right{
+    margin-top: 1.5rem;
+    
+    border-radius: 50px;
+    width: 100%;
+    background: #f2f2fd;
+    height: 100vh;
+    
+}
+.right .top2{
+    height: 20vh;
+   
+    
+    
+}
+.right .top2 button{
+    display: none;
+}
+
+.right .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 50px;
+    padding: 1rem 1rem;
+  
+
+}
+.right .top2-continue{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right .container .top2 .img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.rightboard{
+    margin-top: 200px;
+}
+.rightboard .text-right{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size:0.6rem;
+}
+.rightboard .text-box .massage {
+    display: flex;
+    justify-content:left;
+    margin: 2rem 1rem;
+}
+.rightboard .text-box .massage .material-symbols-sharp{
+    background: #e3e3ef;
+    border-radius: 15px;
+    padding: 0.3rem;
+    margin-right: 7px;
+}
+
+
+
+
+
+
+
+.rightboard .last-text{
+    margin-left: 20px;
+    background: white;
+    margin-right: 20px;
+    border-radius: 30px;
+    padding: 2rem;
+}
+.rightboard .last-text .board{
+    font-size: 0.5rem;
+    
+}
+.rightboard .last-text .ptext{
+    margin-top: 4px;
+    opacity: inherit;
+    font-size: 1rem;
+}
+
+
+
+header a {
+    color: black;
+}
+
+
+
+
+footer .card {
+    background: rgb(240, 236, 236);
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 1200px){
+   .container{
+    width: 94%;
+    grid-template-columns: 7rem auto 22rem ;
+
+   }
+   aside .sidebar h3{
+    display: none;
+   }
+    aside .sidebar a {
+        width: 5.5rem;
+    }
+    aside .sidebar a:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+    }
+    main .insights{
+        grid-template-columns: 1fr ;
+        gap: 10px;
+    }
+    main .recent-orders{
+        width:94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem;
+    }
+    main .recent-orders table {
+        width: 63vw;
+    }
+        main table thead tr th:last-child,
+         main table thead tr th:first-child
+         {
+        display: none;
+        }
+        main table tbody tr td:last-child,
+        main table tbody tr td:first-child
+        {
+       display: none;
+       }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    aside{
+        position: fixed;
+        left: 0;
+        width: 18rem;
+        z-index: 3;
+        height: 100vh;
+        display: none;
+    }
+    aside .sidebar h3{
+        display: inline;
+    }
+    aside .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+    aside .sidebar a:last-child {
+        position: absolute;
+        bottom: 5rem;
+    }
+    aside .close{
+        display: block;
+        cursor: pointer;
+       color: red;
+    }
+    main{
+        margin-top: 8rem;
+        padding: 0 1rem;
+        
+    }
+    main .recent-orders{
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 70%;
+    }
+    main .recent-orders table{
+        width: 100%;
+    }
+
+
+
+    
+    .right{
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+    .right .top2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 0 0.8rem;
+    height: 4.6rem;
+    width: 100%;
+    margin:0 ;
+    z-index: 2;
+    }
+    .right .top2 .theme-toggler{
+        width:4.4rem ;
+        position: absolute;
+        left: 65%;
+    }
+    .right .profile .info{
+        display: none;
+    }
+    .right .top2 button{
+        display: inline-block;
+        cursor: pointer;
+        background: transparent;
+        position: absolute;
+        left: 1rem;
+
+    }
+    .right .top2 button span{
+        font-size: 2rem;
+
+    }
+    .span{
+        display: none;
+    }
+    .rightboard .text-right{
+        display: none;
+    }
+    .rightboard .last-text{
+        width: 30%;
+        font-size: 2rem;
+    }
+    .middle{
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+}
+    

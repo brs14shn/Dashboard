@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Dashboard">
+    <meta name="author" content="John Doe">
+    <title>RyseSoft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <h2 class="dappr">dappr</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-sharp">close</span>
+
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        grid_view
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-symbols-sharp">
+                        person_outline
+                    </span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Mesaages</h3>
+
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        inventory
+                    </span>
+                    <h3>Products</h3>
+                </a>
+                <a href="#" class="lastt">
+                    <span class="material-symbols-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        add
+                    </span>
+                    <h3>Add Product</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+
+
+            </div>
+        </aside>
+
+        <main>
+            <h1>Good morning, James!</h1>
+            <div class="main-insight">
+                <div class="insights">
+
+                    <div class="box">
+                        <div class="box-material">
+                            <span class="material-symbols-sharp">
+                                view_timeline
+                            </span>
+                            <span class="material-symbols-sharp">
+                                more_vert
+                            </span>
+                        </div>
+                        <div class="left">
+
+                            <h1>$143,624</h1>
+
+
+
+                            <small class="text-muted">Your bank balance</small>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="box">
+                        <div class="box-material">
+                            <span class="material-symbols-sharp">
+                                circle_notifications
+                            </span>
+                            <span class="material-symbols-sharp">
+                                more_vert
+                            </span>
+                        </div>
+                        <div class="left">
+
+
+
+                            <h1>$125,024</h1>
+                            <small class="text-muted">Your bank balance</small>
+
+
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+
+
+                    </div>
+
+                    <div class="box">
+                        <div class="box-material">
+                            <span class="material-symbols-sharp">
+                                edit_calendar
+                            </span>
+                            <span class="material-symbols-sharp">
+                                more_vert
+                            </span>
+                        </div>
+                        <div class="left">
+
+
+                            <h1>$7</h1>
+                            <small class="text-muted">Employess working today</small>
+
+
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="box">
+                        <div class="box-material">
+                            <span class="material-symbols-sharp">
+                                circle_notifications
+                            </span>
+                            <span class="material-symbols-sharp">
+                                more_vert
+                            </span>
+                        </div>
+                        <div class="left">
+
+
+                            <h1>$3,287,49</h1>
+                            <small class="text-muted">Employess working today</small>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <section class="middle">
+
+                    <div class="middle-left">
+
+                        <div class="client">
+                            <span>New Client</span>
+                            <div class="client-one">
+                                <h3>53</h3>
+                                <h6>18</h6>
+                            </div>
+                        </div>
+                        <div class="overdue">
+                            <span>Invoıces Overdue</span>
+                            <div class="client-two">
+                                <h3>25</h3>
+                                <h6>12</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="middle-right">
+                        <h1>sadasdas</h1>
+
+                    </div>
+                </section> -->
+
+                <section class="middle">
+                    <div class="middle-left">
+
+                        <div class="card-top">
+                            <h4>New Client</h4>
+                            <div class="card-top-main">
+                                <span>53</span>
+                                <p>+18.7%</p>
+                            </div>
+                        </div>
+                        <div class="card-top">
+                            <h4>Invoıces Overdue</h4>
+                            <div class="card-top-main">
+                                <span>6</span>
+                                <p id="red">+2.7%</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="middle-right">
+                        <div class="content">
+                            <div class="title">
+                                <p>Revenue</p>
+                                <span>Last 7 days VS prior week</span>
+                            </div>
+                            <canvas id="myChart" style="width:100%;max-width:430px;height:200px"></canvas>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <div class="recent-orders">
+                    <h2>Recent Email</h2>
+                    <table>
+                        <thead>
+                            <!-- <tr>
+                                <th>Product Name</th>
+                                <th>Product Number</th>
+                                <th>Payment</th>
+                                <th>Status</th>
+                            </tr> -->
+                        </thead>
+                        <tbody>
+
+
+                            <!-- <tr>
+                                <td>Foldable Mini Drone</td>
+                                <td>127312</td>
+                                <td>Due</td>
+                                <td>Pending</td>
+                            </tr> -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+        </main>
+
+        <div class="right">
+            <div class="container">
+
+                <div class="top2">
+                    <div class="top2-continue">
+                        <button id="menu-btn">
+                            <span class="material-symbols-sharp">
+                                menu
+                            </span>
+                        </button>
+
+
+                        <span class="material-symbols-sharp">
+                            calendar_month
+                        </span>
+
+                        <span class="material-symbols-sharp">
+                            notifications
+                        </span>
+
+
+                        <span class="material-symbols-sharp">
+                            mail
+                        </span>
+                        <span class="img">
+                            <img src="./img/resim1.jpg" alt="">
+                        </span>
+                        
+                         <span class="material-symbols-sharp expand">
+                                expand_more
+                        </span>
+
+                         
+                            
+                           
+
+                           
+                        
+
+                    </div>
+
+
+                </div>
+
+                <div class="rightboard">
+                    <div class="text-right">
+                        <h1>Your to-Do list</h1>
+                    </div>
+                    <div class="text-box">
+                        <div class="massage">
+
+                            <span class="material-symbols-sharp">
+                                border_outer
+                            </span>
+                            <div class="paragraf">
+                                <p>Run Payrol</p>
+                                <p id="paragraf-bir">Mar 4 at 6:00 pm</p>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <div class="massage">
+                                <span class="material-symbols-sharp">
+                                    schedule
+                                </span>
+                                <div class="paragraf">
+                                    <p>Review time off request</p>
+                                    <p id="paragraf-iki">Mar 7 at 6:00 pm</p>
+                                </div>
+                            </div>
+                            <div class="update">
+                                <div class="massage">
+                                    <span class="material-symbols-sharp">
+                                        event_note
+                                    </span>
+                                    <div class="paragraf">
+                                        <p>Sign board resolution</p>
+                                        <p id="paragraf-uc">Mar 12 at 6:00 pm</p>
+                                    </div>
+                                </div>
+                                <div class="update">
+                                    <div class="massage">
+                                        <span class="material-symbols-sharp">
+                                            calendar_today
+                                        </span>
+                                        <div class="paragraf">
+                                            <p>Finish onboard Tony</p>
+                                            <p id="paragraf-dort">Mar 12 at 6:00 pm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="last-text">
+                                    <div class="board">
+                                        <h1>Board meeting</h1>
+                                    </div>
+                                    <div class="ptext">
+                                        <p>Feb 22 at 08:00 PM</p>
+                                        <p>You have been invited to attend a meeting of the Board Directors</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+                <script src="dummydata.js"></script>
+                <script src="app.js"></script>
+                <script src="./chart.js"></script>
+
+</body>
+
+</html>
