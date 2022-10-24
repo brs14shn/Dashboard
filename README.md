@@ -38,9 +38,10 @@
 - SEO
 
 ### 🚩 How does my project look
-[]()
 
-How To Use
+<p align=center><img src ="https://user-images.githubusercontent.com/99876715/197492237-4cbec223-4fa0-4bdb-8c0d-166e90bddb8f.gif"></p>
+
+### 🚩 How To Use
 
 To clone and run this application, you'll need Git
 ```
